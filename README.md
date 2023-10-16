@@ -98,28 +98,22 @@ The dataset was sourced from Kaggle and includes grayscale images in a tabular f
 
 * Data Wrangling
 
-- Combining Datasets
-
+Combining Datasets
 To increase diversity and data volume, Kaggle and raw image datasets were combined. Labels were mapped for consistency between the two datasets.
 
-- Splitting the Data
-
+Splitting the Data
 The combined dataset was split into training and testing sets for model evaluation.
 
-- One-Hot Encoding
-
+One-Hot Encoding
 Labels were one-hot encoded to prepare them for classification.
 
-- Normalization of Pixels
-
+Normalization of Pixels
 Pixel values were normalized to the range of 0 to 1 for efficient model training.
 
-- Reshaping
-
+Reshaping
 The feature data was reshaped to align with the expected input format for Convolutional Neural Networks (CNN).
 
-- Preprocessing Images
-
+Preprocessing Images
 Images underwent preprocessing, including Gaussian smoothing and histogram equalization, to enhance pattern recognition.
 
 ### EDA
