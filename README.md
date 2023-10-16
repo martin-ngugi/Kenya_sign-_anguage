@@ -86,3 +86,57 @@ To enhance diversity and volume, group members contributed extra images. Notably
 
 ## 3. Data Preparation
 
+* Collecting Data
+
+Collecting Images
+
+In this step, images of hand signs representing the American Sign Language alphabet were captured using OpenCV. The code utilizes a webcam to collect grayscale images of size 28x28 pixels, excluding hand motions for letters J and Z.
+
+Reading the Data
+
+The dataset was sourced from Kaggle and includes grayscale images in a tabular format. The pixel values range from 0 to 255, forming a 28x28 grid. Additionally, a set of raw images was collected to augment diversity.
+
+* Data Wrangling
+
+Combining Datasets
+
+To increase diversity and data volume, Kaggle and raw image datasets were combined. Labels were mapped for consistency between the two datasets.
+
+Splitting the Data
+
+The combined dataset was split into training and testing sets for model evaluation.
+
+One-Hot Encoding
+
+Labels were one-hot encoded to prepare them for classification.
+
+Normalization of Pixels
+
+Pixel values were normalized to the range of 0 to 1 for efficient model training.
+
+Reshaping
+
+The feature data was reshaped to align with the expected input format for Convolutional Neural Networks (CNN).
+
+Preprocessing Images
+
+Images underwent preprocessing, including Gaussian smoothing and histogram equalization, to enhance pattern recognition.
+
+### EDA
+
+The following analysis was performed on the data:
+
+* Displaying the images along with their labels.
+* Visualizing the frequency distribution of labels in both the train and test datasets.
+* Pixel distribution
+
+## 4. Modeling
+
+The models include;
+
+* Dense neural network
+* Convolution neural network
+
+## 5. Evaluation
+
+Our success metrics is accuracy. The model that had the highest accuracy for the validation set was chosen to be the best model and thus used to predict the fingerspelling images.
