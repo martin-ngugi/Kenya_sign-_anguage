@@ -86,35 +86,12 @@ To enhance diversity and volume, group members contributed extra images. Notably
 
 ## 3. Data Preparation
 
-* Collecting Data
+Within our data preparation phase, we performed the following tasks:
 
-- Collecting Images
-
-In this step, images of hand signs representing the American Sign Language alphabet were captured using OpenCV. The code utilizes a webcam to collect grayscale images of size 28x28 pixels, excluding hand motions for letters J and Z.
-
-- Reading the Data
-
-The dataset was sourced from Kaggle and includes grayscale images in a tabular format. The pixel values range from 0 to 255, forming a 28x28 grid. Additionally, a set of raw images was collected to augment diversity.
-
+* Clean Data
 * Data Wrangling
-
-Combining Datasets
-To increase diversity and data volume, Kaggle and raw image datasets were combined. Labels were mapped for consistency between the two datasets.
-
-Splitting the Data
-The combined dataset was split into training and testing sets for model evaluation.
-
-One-Hot Encoding
-Labels were one-hot encoded to prepare them for classification.
-
-Normalization of Pixels
-Pixel values were normalized to the range of 0 to 1 for efficient model training.
-
-Reshaping
-The feature data was reshaped to align with the expected input format for Convolutional Neural Networks (CNN).
-
-Preprocessing Images
-Images underwent preprocessing, including Gaussian smoothing and histogram equalization, to enhance pattern recognition.
+* Image processing
+* Feature Engineering
 
 ### EDA
 
