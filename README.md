@@ -49,21 +49,27 @@ Integrate the system succesfully into a website, ensuring seamless functionality
 #### Specific Objectives:
 
 * Data Collection
+
 Collect a diverse and comprehensive dataset of fingerspelling gestures performed by individuals with varying signing styles,hand shapes and speeds
 
 * Develop a robust hand detection system
+
 Create an accurate and robust hand detection system using cvzone and MediaPipe to ensure precise tracking of hand movements during fingerspelling.
 
 * Implement fingerspelling recognition
+
 Develop a recogntion component that can identify and interpret fingerspelled words and gestures in real-time using machine learning algorithms.
 
 * Real-time translation
+
 Intergrate a translation mechanism that converts detected fingerspelled letters into text in real-time,ensuring immediate and accessible communication.
 
 * User-Friendly Interface
+
 Design an intuitive user interface that is accessible and user-friendly, allowing individuals with disabilities to interact with the system comfortably
 
 * Intergration into a website
+
 Develop a website to intergrate the system to maximize its reach and impact.
 
 ## 2. Data Understanding
