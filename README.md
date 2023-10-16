@@ -74,5 +74,15 @@ Develop a website to intergrate the system to maximize its reach and impact.
 
 ## 2. Data Understanding
 
-This dataset, comprising diverse fingerspelling gestures by both genders, is crucial for the success of our recognition system. It captures real-world signing practices, incorporating varied styles, handshapes, and gender-specific differences. Equal representation from males and females acknowledges potential articulation variations, ensuring our system accommodates diverse signing patterns. The dataset also includes variations in lighting and backgrounds, enhancing the system's robustness. This meticulously collected data forms the foundation for developing a highly accurate, inclusive, and adaptable real-time fingerspelling recognition system, addressing communication barriers for individuals with hearing impairments.
+The dataset is sourced from [Kaggle](https://www.kaggle.com/datasets/datamunge/sign-language-mnist)
+
+**Content**: The dataset features grayscale images (28x28 pixels) of hand signs representing the American Sign Language (ASL) alphabet, excluding J and Z due to hand motion. Pixel values range from 0 to 255, where 0 is black and 255 is white, representing different shades of gray. The images effectively capture the shape and orientation of hand gestures corresponding to letters A-Z in ASL.
+
+**Format**: The dataset format closely matches the classic MNIST dataset. It includes a header row of the label and pixel values of pixel1 to pixel784.
+
+**Size**: The dataset contains 27,455 cases for training and 7,172 cases for testing.
+
+To enhance diversity and volume, group members contributed extra images. Notably, there's no significant difference between fingerspelling in ASL and Kenyan Sign Language (KSL), allowing interchangeability.
+
+## 3. Data Preparation
 
