@@ -111,3 +111,34 @@ The models include;
 ## 5. Evaluation
 
 Our success metrics is accuracy. The model that had the highest accuracy for the validation set was chosen to be the best model and thus used to predict the fingerspelling images.
+
+## 6. Conclusions
+
+1. Pixel distribution suggests important features in the center, impacting model learning.
+
+2. Baseline and Second Models show signs of overfitting, with high training accuracy and lower validation accuracy.
+
+3. First and Third Models perform better, demonstrating effective learning and generalization.
+
+4. Model complexity aligns with performance, with the Third Model being the most complex.
+
+5. Dropout layers help prevent overfitting, but additional regularization may be needed due to persisting issues in some models.
+
+## 7. Recommendations
+
+1. For models showing overfitting (Baseline and Second Model), consider regularization techniques like dropout or early stopping. Increasing training data may also help reduce overfitting.
+
+2. Monitor the performance of high-performing models (First and Third Model) on new unseen data to ensure sustained effectiveness over time.
+
+3. If image features are concentrated in the center, explore preprocessing techniques like center-cropping or attention mechanisms to enhance model performance by reducing noise.
+
+4. The Third Model, with a training accuracy of 99.48% and test accuracy of approximately 94.62%, seems to be the best choice. It incorporates various techniques to prevent overfitting and demonstrates effective learning and generalization.
+
+## 8. Next Steps
+
+1. Evaluate the models on a regular basis using new, unseen data to ensure they continue to perform well and can generalize to new data.
+
+2. Setting up a system for monitoring model performance over time. This will allow you to quickly identify and address any issues that may arise.
+
+3. Consider using pretrained models which have been trained on large datasets and have proven success in image classification tasks. These models can be fine-tuned on your specific task and often provide a good starting point.
+
